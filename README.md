@@ -1,6 +1,2 @@
 # ApiCep
-Este código é uma aplicação ASP.NET Core que utiliza o framework ApiMinima. 
-Ele usa a classe WebApplication para criar um construtor e adiciona vários serviços à aplicação, como DbContext, autorização,
-exploração de pontos de extremidade da API e geração de documentação do Swagger. O banco de dados é configurado para usar o banco de dados In-Memory e a tabela é chamada "EnderecoList".
-
-A aplicação verifica se está em um ambiente de desenvolvimento e, se sim, habilita a página de exceção do desenvolvedor. Ele também configura o uso do Swagger e cria dois mapeamentos de rota: um para o recurso "Endereco Cep" que faz uma chamada à API externa "viacep.com.br" e outro para o recurso "Inserir endereco" que permite inserir um novo endereço no banco de dados. Por fim, ele também habilita a interface do usuário do Swagger e inicia a execução da aplicação.
+Este código está configurando um aplicativo da web usando a classe WebApplication do namespace ApiMinima.Model. Ele está configurando o aplicativo para usar um banco de dados na memória para armazenar endereços e adicionar autorização, documentação de API e suporte Swagger ao aplicativo. O código também configura um endpoint GET para recuperar informações de endereço usando a URL " https://viacep.com.br/ws/01001000/json/ " e um endpoint POST para inserir novos endereços no banco de dados. O código também inclui tratamento de erros para o ambiente de desenvolvimento e usa SwaggerUI para documentação. Por fim, o código executa o aplicativo usando o método RunAsync.
